@@ -1,0 +1,141 @@
+.bootstrap-datetimepicker-widget table td {
+    color: #0e6ced
+}
+
+    .bootstrap-datetimepicker-widget table td.special, .bootstrap-datetimepicker-widget table td.special.active {
+        color: #ff0000;
+    }
+
+        .bootstrap-datetimepicker-widget table td.special:not(.disabled):hover {
+            background: #ffcccc;
+        }
+
+        .bootstrap-datetimepicker-widget table td.special.disabled {
+            background: unset !important;
+            opacity: 0.5
+        }
+
+    .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+        background: rgba(0, 123, 255, 0.2);
+        color: #0269d8;
+        font-weight: bold;
+        border: 2px solid #007bff;
+    }
+
+/* 錯誤訊息 */
+.field-validation-error {
+    color: red;
+}
+
+/*body {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/*.dl-horizontal dt {
+    white-space: normal;
+}*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.table-darker th {
+    background-color: honeydew;
+}
+
+.table-lighter th {
+    background-color: #efefef;
+}
+
+h1.table-calendar {
+    font-size: large;
+    text-align: center;
+}
+
+.table-calendar table {
+    border: 1px;
+    width: 80%;
+    align-self: center;
+}
+
+.table-calendar button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    width: 100px;
+    height: 100%;
+}
+
+    .table-calendar button:disabled,
+    .table-calendar button[disabled] {
+        background-color: #efefef;
+        cursor: not-allowed;
+    }
+
+
+.cal-button-enabled {
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+    .cal-button-enabled:hover {
+        border: 2px solid Yellow;*/ /* Green */
+/*}
+
+.cal-button-disabled {
+    background-color: #efefef;
+    cursor: not-allowed;
+}
+
+    .cal-button-disabled:hover {
+        border: 2px solid Transparent;*/ /* Green */
+/*}
+
+.calFeedback {
+    padding: 15px;
+    color: red;
+}
+
+.table-calendar th {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    height: 30px;
+    background-color: honeydew;
+}
+
+.table-calendar td {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    height: 30px;
+}
+
+.divTimeEnabled {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.divTimeDisabled {
+    background-color: #efefef;
+    cursor: not-allowed;
+}
+
+.divTimeCurrent {
+    background-color: lightyellow;
+    cursor: pointer;
+}*/

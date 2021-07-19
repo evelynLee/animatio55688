@@ -1583,9 +1583,41 @@ a.tag.pill:hover {
 
 .banner {
     background-size: cover;
-    background-position: center;
+    background-position-y: center;
+    background-position-x: -10px;
     background-repeat: no-repeat;
-    position: relative
+    position: relative;
+
+}
+
+.banner-bigger {
+    animation-name: bigger;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(1);
+        background-position-x: 0px;
+    }
+
+    50% {
+        transform: scale(1.02);
+        background-position-x: 15px;
+    }
+    100% {
+        transform: scale(1);
+        background-position-x: -10px;
+    }
+}
+
+.delay-5s {
+    animation-delay: 4.8s;
+}
+
+.delay-10s {
+    animation-delay: 9.6s;
 }
 
 .banner:before {
@@ -1623,6 +1655,11 @@ a.tag.pill:hover {
     font-weight: bold;
     letter-spacing: 0.04em;
     color: #0c4926;
+    background: rgba(255,255,255,0.5);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
     font-size: 2.25rem
 }
 
@@ -1653,12 +1690,12 @@ a.tag.pill:hover {
 
 @media all and (min-width: 768px) {
     .banner-subtitle {
-    font-size: 1.87rem;
-    background-color: rgba(255,255,255,0.6);
-    width: 500px;
-    margin: 1rem auto 2rem;
-    padding: 5px;
-    border-radius: 50px;
+        font-size: 1.87rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 500px;
+        margin: 1rem auto 2rem;
+        padding: 5px;
+        border-radius: 50px;
     }
 }
 
@@ -2135,16 +2172,22 @@ label.checkbox.block>input:checked+span {
 
 .headerwrap a span {
     position: relative;
-    padding: 0 0 3px
+    padding: 0 0 4px
 }
 
-.headerwrap a span:before {
+/* .headerwrap a span:hover {
+    color: #fff;
+} */
+
+.headerwrap a span:after {
     content: '';
     position: absolute;
-    left: 0;
+    left: -10px;
     bottom: 0;
-    height: 1px;
-    background: #156d3b;
+    height: 2px;
+    border-radius: 50px;
+    FONT-WEIGHT: 200;
+    background: #78be21;
     width: 0;
     -webkit-transition: .2s linear all;
     transition: .2s linear all
@@ -2152,12 +2195,12 @@ label.checkbox.block>input:checked+span {
 
 .headerwrap a:hover,
 .headerwrap a :focus {
-    color: #156d3b
+    color: #156d3b;
 }
 
-.headerwrap a:hover span:before,
-.headerwrap a :focus span:before {
-    width: 100%
+.headerwrap a:hover span:after,
+.headerwrap a :focus span:after {
+    width: 125%
 }
 
 .headerwrap .navbar-toggler:not(.collapsed) .fa-bars:before {
@@ -2318,7 +2361,7 @@ label.checkbox.block>input:checked+span {
 
 @media all and (min-width: 992px) {
     .navbar-nav {
-        margin-top: 32px
+        margin-top: 20px
     }
 }
 
@@ -2328,6 +2371,26 @@ label.checkbox.block>input:checked+span {
     padding-top: 30px;
     font-size: 14px;
     line-height: 1.7em
+}
+
+.tel-service {
+    border-radius: 5px;
+    background: #156d3b;
+    padding: 8px 16px;
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    width: 97%;
+}
+
+.tel-service:hover {
+    background:#78be21;
+}
+
+.tel-service span {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    padding-left: 25px;
 }
 
 @media all and (min-width: 992px) {
@@ -2442,12 +2505,12 @@ label.checkbox.block>input:checked+span {
 
 @media all and (min-width: 992px) {
     .mainslider .slick-dots {
-    bottom: 10%;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 50px;
-    left: 45%;
-    width: 150px;
-    padding: 0 0 10px 0;
+        bottom: 10%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        left: 45%;
+        width: 150px;
+        padding: 0 0 10px 0;
     }
 }
 
@@ -2477,7 +2540,8 @@ label.checkbox.block>input:checked+span {
 .bg-leftpic {
     position: relative;
     background: -webkit-gradient(linear, left top, left bottom, from(#f9fffa), to(#fff)) center/cover no-repeat;
-    background: linear-gradient(to bottom, #f9fffa, #fff) center/cover no-repeat
+    background: linear-gradient(to bottom, #f9fffa, #fff) center/cover no-repeat;
+    border-bottom: 10px solid #edf3e9;;
 }
 
 .bg-leftpic:before {
